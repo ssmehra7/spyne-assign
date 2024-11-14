@@ -1,8 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
   provider = "prisma-client-js"
@@ -19,5 +15,22 @@ model User {
   name      String
   email     String   @unique
   password  String
+  cars Car[] @relation("UserCars")
+}
 
+model Car{
+  id String @id @default(uuid())
+  title String
+  description String
+  tags String[]
+  images      Image[]  @relation("CarImages")
+  userId String
+  user User @relation("UserCars", fields: [userId], references: [id])
+}
+
+model Image {
+  id String @id @default(uuid())
+  url String
+  carId String
+  car Car @relation("CarImages", fields: [carId], references: [id]) 
 }
