@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Car Management Application
 
-## Getting Started
+This application allows users to manage cars by providing functionalities like login, adding cars, viewing, updating, searching, and deleting car details.
 
-First, run the development server:
+## Required Functionalities
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Each task can be marked as complete by checking the corresponding box.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [ ] **User Authentication**
+  - [ ] Users can login/signup to the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] **Add Car**
+  - [ ] Users can add a car with up to 10 images, a title, description, and tags.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [ ] **View Cars**
+  - [ ] Users can view a list of all their cars.
 
-## Learn More
+- [ ] **Search Cars**
+  - [ ] Users can perform a global search across all their cars.
+    - The search will display all cars where the title, description, or tags match the keyword.
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] **View Car Details**
+  - [ ] Users can click on a specific car to view its detailed information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] **Update Car**
+  - [ ] Users can update a car’s title, description, tags, or images.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] **Delete Car**
+  - [ ] Users can delete a car from their collection.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> This document is written in MDX format for easy tracking and usage with Markdown-compatible tools.
