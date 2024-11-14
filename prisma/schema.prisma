@@ -23,14 +23,14 @@ model Car{
   title String
   description String
   tags String[]
-  images      Image[]  @relation("CarImages")
+  // images      Image[]  @relation("CarImages")
   userId String
   user User @relation("UserCars", fields: [userId], references: [id])
 }
 
-model Image {
-  id String @id @default(uuid())
-  url String
-  carId String
-  car Car @relation("CarImages", fields: [carId], references: [id]) 
-}
+// model Image {
+//   id String @id @default(uuid())
+//   url String
+//   carId String
+//   car Car @relation("CarImages", fields: [carId], references: [id]) 
+// }
